@@ -72,7 +72,7 @@ public class AppsDeepBF {
     public void oneSignalBF(BF bf) {
         OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE);
         OneSignal.initWithContext(bf);
-        OneSignal.setAppId(WeSeFB.decodeBF("ZTA1ZGQ4NjAtYjE2ZS00MzY0LTlhZmEtNmE1NThmYzA4NmM1Cg=="));
+        OneSignal.setAppId("e05dd860-b16e-4364-9afa-6a558fc086c5");
     }
 
     public void ifj(BF bf) {
@@ -100,7 +100,7 @@ public class AppsDeepBF {
             public void onConversionDataSuccess(Map<String, Object> map) {
 
                 cscs = map.get(WeSeFB.decodeBF("YWZfc3RhdHVz")).toString();
-                Log.d("weq", cscs );
+
                 if (cscs.equals(WeSeFB.decodeBF("Tm9uLW9yZ2FuaWM="))) {
 
                     try {
@@ -253,7 +253,7 @@ public class AppsDeepBF {
             @Override
             public void run() {
                 ffd++;
-                Log.d("weq",ffd+"");
+
                 if (!AppsDeepBF.cscs.equals("-") || !AppsDeepBF.cawdx.equals("-")) {
 
                     if (cscs.equals(WeSeFB.decodeBF("Tm9uLW9yZ2FuaWM="))) {
@@ -263,7 +263,6 @@ public class AppsDeepBF {
                         intent.putExtra("looo",load);
                         bf.startActivity(intent);
                         bf.finishAffinity();
-                        Log.d("weq","App"+load);
                         ffd = 10;
 
                     } else if (csada != null) {
@@ -273,7 +272,6 @@ public class AppsDeepBF {
                         intent.putExtra("looo",load);
                         bf.startActivity(intent);
                         bf.finishAffinity();
-                        Log.d("weq","Deep"+load);
                         ffd = 10;
                     } else {
 
@@ -290,7 +288,6 @@ public class AppsDeepBF {
                         intent.putExtra("looo",load);
                         bf.startActivity(intent);
                         bf.finishAffinity();
-                        Log.d("weq","Organic"+load);
                         ffd = 10;
                     }
                 }
